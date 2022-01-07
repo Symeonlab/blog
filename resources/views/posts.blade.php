@@ -1,4 +1,4 @@
-@props (['posts'])
+
 
 <x-layout>
     @include('_posts-header')
