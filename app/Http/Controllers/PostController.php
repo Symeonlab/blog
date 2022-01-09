@@ -13,7 +13,7 @@ class PostController extends Controller
         return view('posts.index', [
             'posts' => Post::latest()->filter(
                 request(['search','category','author'])
-            )->paginate(6)->withQueryString(),
+            )->paginate(15)->withQueryString(),
             'categories' => Category::all()
         ]);
     }
