@@ -1,20 +1,31 @@
-Laravel From Scratch Blog Demo Project
+# Laravel From Scratch Blog Demo Project
 
 
-Installation
+
+
+## Installation
+
 First clone this repository, install the dependencies, and setup your .env file.
 
-Clone or dowload project
+```bash
+git clone or download project
 composer install
 cp .env.example .env
-Then create the necessary database.
-
-php artisan db
+```
+ Then create the necessary database.   
+  ```bash
+  php artisan db
 create database blog
-And run the initial migrations and seeders.
+```
 
+And run the initial migrations and seeders.
+  ```bash
 php artisan migrate --seed
-Further Ideas
+  ```
+## Documentation
+
+[Documentation]
+
 Of course we only had time in the Laravel From Scratch series to review the essentials of a blogging platform. You can certainly take this many steps further. Here are some quick ideas that you might play with.
 
 Add a status column to the posts table to allow for posts that are still in a "draft" state. Only when this status is changed to "published" should they show up in the blog feed.
