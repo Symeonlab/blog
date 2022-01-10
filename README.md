@@ -1,7 +1,10 @@
+Laravel From Scratch Blog Demo Project
+
+
 Installation
 First clone this repository, install the dependencies, and setup your .env file.
 
-clone or download the project
+Clone or dowload project
 composer install
 cp .env.example .env
 Then create the necessary database.
