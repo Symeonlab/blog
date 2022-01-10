@@ -30,7 +30,6 @@
                                     </path>
                                 </g>
                             </svg>
-
                             Back to Posts
                         </a>
 
@@ -50,13 +49,9 @@
                 </div>
 
                 <section class="col-span-8 col-start-5 mt-16 space-y-6" >
-                  @foreach($post->comments as $comment)
-                   <x-post-comment :comment="$comment"/>
-                    @endforeach
+                    @include('posts._add-comment-form')
                 </section>
             </article>
         </main>
-
     </section>
-
 </x-layout>
